@@ -1,12 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Raleway:wght@300;400;500;600;700&display=swap');
 body,html { 
-    margin:0;
-    padding: 0;
-    font-family: Archivo Black, sans-serif;
+
+    line-height:l.5;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     height: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+* {
+    margin: 0;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 .container {
@@ -16,6 +22,7 @@ body,html {
 /* nav bar portion right here buddy */
 
 header {
+    font-family: Archivo Black, sans-serif;
     background:#ffffff;
 }
 
@@ -29,11 +36,8 @@ header::after {
     background-color: rgb(255, 255, 255);
     float: left;
     padding: 0px;
-    outline:;
-    outline-style: ;
 
 }
-
 
 nav {
     float: right;
@@ -47,17 +51,6 @@ nav ul {
 }
 /* organize what "i" is */
 
-i {
-    display: inline-block;
-    float: left;
-    background-color: rgb(45, 224, 69);
-    padding-top: ;
-    margin-right: 400p;
-    padding:0px;
-  
-/* i ends */
-
-}
 nav li {
     display: inline-block;
     background-color: rgb(255, 255, 255);
@@ -81,42 +74,45 @@ nav a:hover {
     opacity:75%;
 }
 
-a {
-
-}
-
     /* The Hero Image portion */
 
 .hero {
     position: relative;
     content:"";
     width: 100%;
-    height: 60%;
+    height: 70%;
     /* background-repeat: no-repeat;
     background-size:contain;
     background-position: center; */
-    background: url(/Wfb-Project123/assets/images/hero6.jpg);
+    background: url(/assets/images/hero6.jpg);
     background-repeat: no-repeat;
     background-size:cover;
+    
 
 }
 
 .hero-content {
-    position:;
-    font-family: "archivo black", sans-serif;
+    position: relative;
+    font-family:Arial, Helvetica, sans-serif;
     color: rgb(255, 255, 255);
     text-align: center;
     margin: ;
+    position: relative;
 }
 
 .hero-title {
-    font-size:50x;
+    font-size: 170px;
+    font-stretch: wider;
     font-weight: 400;
-    margin-bottom: px;
-    position: absolute;
-  
-    
-
+    margin-bottom: 100px;
+    position: center;
+}
+p {
+    display: inline-flex;
+    padding-top:150px;
+    margin-left:100px;
+    margin-right:100px;
+    opacity:50%;
 }
 
 .hero-subtitle {
@@ -126,3 +122,97 @@ a {
     
 
 }
+.photos {
+    height: 860px;
+    width: auto;
+
+}
+.photos-container {
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* footer start */
+
+.container{
+    max-width:2560px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style:none;
+}
+.footer {
+    background: rgb(252,212,212);
+background: linear-gradient(180deg, rgba(252,212,212,0) 0%, rgba(241,151,151,1) 20%);
+  
+    /* background-color: rgba(241, 151, 151, 0.801); */
+    padding: 10px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 10px;
+}
+.footer-col h4{
+    font-size: 30px;
+    color:rgb(36, 31, 31);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color:rgb(0, 0, 0);
+    height: 5px;
+    box-sizing: border-box;
+    opacity: 70%;
+    width: 400px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+   font-size: 25px;
+   text-transform: capitalize;
+   text-shadow: 11px 16px 14px rgb(96, 206, 250);
+   margin:0 10px 10px 0;
+   color:rgb(29, 214, 205);
+   text-decoration: none;
+   font-weight: 300;
+   color:rgb(255, 255, 255);
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color:#ffffff;
+    padding-left: 80px;
+}
+
+.footer-col .social-links a{
+    display:inline-block;
+    text-shadow: 11px 16px 14px rgba(140, 204, 255, 1);
+    color: white;
+    height: 40px;
+    width: 40px;
+    margin:0 40px 40px 0;
+    text-align: center;
+    line-height: 40px;
+    
+
+}
+
+
+
